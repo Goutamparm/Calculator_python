@@ -1,47 +1,11 @@
-# Calculator_python
-print("Welcome to the Basic Calculator!")
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-print("Select operation:")
-print("+","-","*","/")
+key Features:-
 
-# Function for addition
-def add(x, y):
-    return x + y
+1. Modular Design with Functions:- add(), subtract(), multiply(), and divide().
 
-# Function for subtraction
-def subtract(x, y):
-    return x - y
+2. Dynamic User Input:- The program takes input from the user for both the operation selection and the numbers to be operated on. 
 
-# Function for multiplication
-def multiply(x, y):
-    return x * y
+3. User-Friendly Interface:- Users are prompted to select an arithmetic operation from a menu by entering a corresponding number.
 
-# Function for division
-def divide(x, y):
-    if y != 0:
-        return x / y
-    else:
-        return "Error! Division by zero."
+4. Error Handling in Division:- A key feature is the inclusion of error handling for division operations. The divide() function checks if the second number (y) is zero before performing the division.
 
-
-choice = input("Enter choice (+,-,*,/): ")
-
-if choice in ['+', '-', '*', '/']:
-
-
-    if choice == '+':
-        print(f"{num1} + {num2} = {add(num1, num2)}")
-
-    elif choice == '-':
-        print(f"{num1} - {num2} = {subtract(num1, num2)}")
-
-    elif choice == '*':
-        print(f"{num1} * {num2} = {multiply(num1, num2)}")
-
-    elif choice == '/':
-        result = divide(num1, num2)
-        print(f"{num1} / {num2} = {result}")
-
-else:
-    print("Invalid input! Please select a valid operation.")
+5. Real-time Calculation and Output:- The program performs the selected operation in real-time, immediately displaying the result to the user. This feature ensures that the user receives instant feedback on their inputs.
